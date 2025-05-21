@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resumen Reserva</title>
+  <link rel="stylesheet" href="interfaz3.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <div class="encabezado">
+      <button class="icono">🅿️</button>
+      <span class="usuario">Nombre visible del usuario</span>
+      <button class="cerrar" onclick="window.location.href='Interfaz2.html'">«</button>
+    </div>
+
+    <details class="info-parqueadero" id="infoParqueadero">
+      <summary class="nombre-parqueadero">Parqueadero prueba sas</summary>
+      <div class="fila"><span class="label">Cupo:</span> Disponible 20/100</div>
+      <div class="fila"><span class="label">Pago:</span> Todos los métodos</div>
+      <div class="fila"><span class="label">Vehículo:</span> Motos todos CC</div>
+      <div class="fila"><span class="label">Horario:</span><br>
+         L-V-F 6:00am / 09:00pm<br>
+         S-D 5:00am / 11:00pm
+      </div>
+      <div class="fila"><span class="label">Obs:</span><br>
+         No se requiere dejar llaves para guardar vehículo.<br>
+         Casillero para casco.
+      </div>
+    </details>
+
+    <div class="resumen" id="resumen">
+      <div class="fila"><span class="label verde">Nombre</span> <span class="dato">Nombre usuario prueba</span></div>
+      <div class="fila"><span class="label verde">Tipo Vehículo</span> <span class="dato">Moto</span></div>
+      <div class="fila"><span class="label verde">Placa</span> <span class="dato">VQP</span></div>
+      <div class="fila"><span class="label verde">Fecha</span> <span class="dato">00/00/00</span></div>
+      <div class="fila"><span class="label verde">Hora inicio</span> <span class="dato">22:00:00 pm</span></div>
+      <div class="fila"><span class="label verde">Hora fin</span> <span class="dato">23:00:00 pm</span></div>
+      <div class="fila"><span class="label verde">Total</span> <span class="dato">1</span></div>
+      <div class="fila"><span class="label verde">Teléfono</span> <span class="dato">123456789</span></div>
+      <div class="fila"><span class="label verde">Correo</span> <span class="dato">correo@prueba</span></div>
+      <div class="fila"><span class="label verde">Método de pago</span> <span class="dato">Efectivo</span></div>
+      <div class="fila total">
+        <span class="total-label">Total a pagar</span>
+        <span class="total-valor">$15.000</span>
+      </div>
+    </div>
+
+    <button class="confirmar" onclick="window.location.href='interfaz1.html'">Confirmar transacción</button>
+  </div>
+
+  <script src="interfaz3.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="estilosLogin.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <span class="icono">P</span>
+    </div>
+
+    <!-- FORMULARIO DE LOGIN -->
+    <form class="formulario" onsubmit="event.preventDefault(); window.location.href='Interfaz1.html';">
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- ENLACE A REGISTRO -->
+    <a href="registro.html" class="registro-link">Registro</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Reset y body */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.contenedor {
+  width: 360px;
+  background-color: #2d5b7a;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Encabezado */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: limegreen;
+  margin-bottom: 15px;
+}
+.icono,
+.cerrar {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.usuario {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Info Parqueadero (desplegable) */
+details.info-parqueadero {
+  background-color: white;
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+details.info-parqueadero summary {
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+  margin-bottom: 8px;
+}
+details.info-parqueadero summary::-webkit-details-marker {
+  display: none; /* ocultar flecha por defecto */
+}
+details.info-parqueadero[open] {
+  background-color: #f9f9f9;
+}
+details.info-parqueadero .fila {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+details.info-parqueadero .fila:last-child {
+  border-bottom: none;
+}
+
+/* Resumen de datos */
+.resumen {
+  background-color: white;
+  border-radius: 15px;
+  padding: 12px;
+  font-size: 14px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  display: block;
+}
+.resumen .fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+.resumen .fila:last-child {
+  border-bottom: none;
+}
+.label {
+  font-weight: bold;
+}
+.verde {
+  color: #5cd879;
+}
+
+/* Total */
+.total {
+  border-top: 2px solid #f44336;
+  padding-top: 10px;
+  margin-top: 12px;
+  text-align: center;
+}
+.total-label {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+.total-valor {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 6px;
+}
+
+/* Botón confirmar */
+.confirmar {
+  margin-top: 10px;
+  background-color: #ffc107;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.confirmar:hover {
+  background-color: #e0a800;
+}

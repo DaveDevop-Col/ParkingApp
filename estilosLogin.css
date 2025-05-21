@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: #33779e;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  .logo {
+    background-color: white;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icono {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: white;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888;
+    cursor: pointer;
+  }
+  
+  .registro-link {
+    display: block;
+    margin-top: 15px;
+    color: #00ff00;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

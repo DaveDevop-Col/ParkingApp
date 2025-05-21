@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de Parqueaderos</title>
+  <link rel="stylesheet" href="interfaz1.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="encabezado">
+      <button class="icono">🅿️</button>
+      <span class="usuario">Nombre usuario</span>
+      <button class="cerrar" onclick="window.location.href='login.html'">«</button>
+    </div>
+
+    <div class="busqueda">
+      <a href="perfil.html">
+        <div class="perfil">
+          <img src="https://img.icons8.com/ios-filled/50/user.png" alt="perfil">
+        </div>
+      </a>
+      <label for="direccion">Nombre o dirección</label>
+      <div class="barra-busqueda">
+        <input type="text" id="direccion" placeholder="Buscar...">
+        <button class="buscar">🔍</button>
+        <span class="ayuda">❓</span>
+      </div>
+    </div>
+
+    <div class="mapa">
+      <img src="mapa.png" alt="mapa">
+    </div>
+
+    <div class="tabla">
+      <h3>Parqueaderos cercanos</h3>
+      <div class="contenedor-tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre park</th>
+              <th>Cupos</th>
+              <th>Vehículos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="verde">Park1</td><td class="verde">50</td><td class="verde">Todos</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="verde">Park2</td><td class="verde">20</td><td class="verde">Motos</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="verde">Park3</td><td class="verde">30</td><td class="verde">Motos</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="rojo">Park4</td><td class="rojo">0</td><td class="rojo">Carros</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="rojo">Park5</td><td class="rojo">0</td><td class="rojo">Carros</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="verde">Park6</td><td class="verde">50</td><td class="verde">Carros</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="rojo">Park7</td><td class="rojo">0</td><td class="rojo">Carros</td></tr>
+            <tr onclick="window.location.href='Interfaz2.html'"><td class="verde">Park8</td><td class="verde">30</td><td class="verde">Motos</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
